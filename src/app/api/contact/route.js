@@ -1,5 +1,5 @@
 import dbConn from "@/utils/dbConnection.js";
-import Contact from "@/models/Contact.js";
+import Contact from "@/models/contact.js";
 import { NextResponse } from "next/server";
 
 export async function POST(req, res) {
