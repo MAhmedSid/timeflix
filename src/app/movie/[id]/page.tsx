@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import styles from "@/app/styles/common.module.css"
-import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 
-const page = async ({ params }: Params): Promise<JSX.Element> => {
+
+const page = async ({ params }: {params: {id:string}}): Promise<JSX.Element> => {
   const id = params.id;
 
   const url = `https://netflix54.p.rapidapi.com/title/details/?ids=${id}&lang=en`;
