@@ -3,7 +3,7 @@ import React from "react";
 import styles from "@/app/styles/common.module.css"
 
 
-const Page = async ({ params }: {params: any}): Promise<JSX.Element> => {
+const Page = async ({ params }: {params: any}) => {
   const id = params.id;
 
   const url = `https://netflix54.p.rapidapi.com/title/details/?ids=${id}&lang=en`;
