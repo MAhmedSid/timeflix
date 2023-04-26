@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Created with Next JS 13 Features with Mongo DB.
 
-## Getting Started
 
-First, run the development server:
+#### Full Stack app without Node js and express js.
+
+This app is simply for those who want to explore the new features and structure of NextJS 13 in an app and see how things work.
+
+
+The app has a very simple structure with all the latest functionalities of NextJS 13. This app has a contact form (connected with MongoDB) and a Rest API integration for movie lists.
+
+
+
+
+## Run locally
+
+Beginner guide, who are just new in Next js can easily understand.
+
+To deploy this project locally.
+
+1. First of all simply fork the repo and download it into your local device.
+
+
+2. After opening the repo folder in the IDE, in the terminal run the command,
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  npm run i
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. then add the environment variables file in the root directory with name ".env.local" , inside it add two variables ( 1. RAPID_URL , 2. MONGODB_URL )
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1- RAPID_URL : In this variable add the api url you will get from netflix rapid api.
 
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello) is an endpoint that uses [Route Handlers](https://beta.nextjs.org/docs/routing/route-handlers). This endpoint can be edited in `app/api/hello/route.ts`.
+2- MONGODB_URL : In this variable add your database connection url. 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. then run command. 
 
-## Learn More
+```bash
+  npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Note: This form will not work if you deploy the project on vercel because. vercel has some limitations on hobby package, in which one limitation is timeout of 5sec on api response. So the api response time from database is longer than 5sec. 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Developers
+
+- [@thapatechnical](https://github.com/thapatechnical)
+- [@MAhmedSid](https://github.com/MAhmedSid)
+
+
+### Thank you for visiting. I hope everyone gets benefits.
